@@ -16,6 +16,7 @@ def parity2(x: int) -> int:
         x &= x - 1
     return result
 
+# Time Complexity: O(log(n))
 def parity3(x: int) -> int:
     x ^= x >> 32
     x ^= x >> 16
